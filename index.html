@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cruise Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="left hidden">
+      <p class=" greet">Hi</p>
+      <p class="score">You scored: 0 </p>
+      <input type="number" class="guess"/><br>
+      <button class="check"> Check!</button>
+      <div class="number">?</div>
+    </div>
+    <div class="right hidden">
+      <h2>Guess my Number</h2>
+      <p class="sub">(between 1 and 20)</p>
+      <P class="start">🏃Start guessing...</P>
+      <p class="chance">📈 Chances: 20</p>
+      <button class="tryAgain">Again</button>
+    </div>
+<div class="doublePannel hidden" id="double1">
+  <p class=" greet" id="greets" >Hi</p>
+      <p class="score score--0">You scored: 0 </p>
+      <input type="number" class="guess guess--0"/><br>
+      <button class="check check--0"> Check!</button>
+</div>
+
+<div class="doublePannel hidden" id="double2">
+  <h2>Guess my Number</h2>
+      <p class="sub">(between 1 and 20)</p>
+      <div class="numberd">?</div>
+      <P class="startd">🏃Start guessing...</P>
+      <p class="chance chance--0">📈 Chances: 20</p>
+      <button class="tryAgain Again2">Again</button>
+</div>
+<div class="doublePannel hidden" id="double3">
+  <p class=" greet" id="greeted">Hi</p>
+      <p class="score score--1">You scored: 0 </p>
+      <input type="number" class="guess guess--1"/><br>
+      <button class="check check--1"> Check!</button>
+</div>
+
+<div class="modal hidden">
+  <p class="win"></p>
+  <button class="tryAgain Again3">Again</button>
+</div>
+
+<div class="overlay hidden"></div>
+
+
+    <div class="welcome">
+      <h1>Cruise Game</h1>
+      <p class="welcome-text" id="first-welcome">
+        Welcome to the cruise game, kindly select the number of player below
+      </p>
+      <p class="hidden greetings"></p>
+      <p class="instruction hidden"> This is the cruise game, at every round I will select a random number and have you guess it. You have the chance of guessing 20times. The earlier you get my number the higher your score!</p>
+      
+      
+      <div class="field-container hidden">
+      <input type="text"  name="playerName" class="name-text field-input" placeholder=" "/>
+        <label class="name-label field-placeholder" for="playerName">Enter Player Name </label>
+        </div>
+
+        <div class="doublePlayerField hidden">
+          <div class="field-container hidden doubleField1">
+            <input type="text"  name="playerName" class="dname-text field-input" placeholder=" "/>
+              <label class="dname-label field-placeholder" for="playerName">Enter Player 1 Name </label>
+              </div>
+          <div class="field-container hidden doubleField2">
+            <input type="text"  name="playerName" class="sdname-text field-input" placeholder=" "/>
+              <label class="sdname-label field-placeholder" for="playerName">Enter Player 2 Name </label>
+              </div>
+        </div>
+  
+      <div class="buttons">
+        <button class="btn" id="single">Single Player</button>
+        <button class="btn" id="double">Double Player</button>
+      </div>
+      <div class="secondDisplay">
+      <button class="btn hidden" id="Submit">Submit</button>
+      <button class="btn hidden" id="Submit2">Submit</button>
+    </div>
+      <div class="ThirdDisplay">
+      <button class="btn hidden" id="continue">Continue</button>
+      <button class="btn hidden" id="continue2">Continue</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
