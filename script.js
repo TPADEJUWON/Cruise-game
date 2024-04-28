@@ -247,4 +247,8 @@ function again() {
   document.getElementById('double3').classList.remove('activePlayer');
 }
 document.querySelector('.Again2').addEventListener('click', again);
-document.querySelector('.Again3').addEventListener('click', again);
+document.querySelector('.Again3').addEventListener('click', function () {
+  again();
+  document.querySelector('.modal').classList.add('hidden');
+  document.querySelector('.overlay').classList.add('hidden');
+});
